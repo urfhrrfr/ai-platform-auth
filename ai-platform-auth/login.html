@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录 · AI助教答疑平台</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="register-page">
+    <header class="brand">
+      <h1>AI助教答疑平台</h1>
+      <p class="brand-caption">随时提问，让学习更轻松。</p>
+    </header>
+
+    <section class="register-card" aria-labelledby="login-title">
+      <header class="card-header">
+        <h2 id="login-title">欢迎回来</h2>
+      </header>
+
+      <!-- 演示表单：后续接入登录接口和“记住我”会话功能。 -->
+      <form action="#" method="post">
+        <p class="form-note">请输入账号和密码，继续你的学习之旅。</p>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="login-account">邮箱 / 用户名</label>
+            <!-- 同时接受邮箱和用户名，因此使用 text 而不是 email。 -->
+            <input type="text" id="login-account" name="username" placeholder="请输入邮箱或用户名" maxlength="254" autocomplete="username" autocapitalize="none" spellcheck="false" autofocus required>
+          </div>
+          <div class="form-field">
+            <label for="login-password">密码</label>
+            <input type="password" id="login-password" name="password" placeholder="请输入密码" minlength="8" maxlength="64" autocomplete="current-password" required>
+          </div>
+        </div>
+
+        <div class="login-options">
+          <label class="agreement" for="remember-me">
+            <input type="checkbox" id="remember-me" name="remember_me" value="yes" autocomplete="off">
+            <span>记住我</span>
+          </label>
+          <details class="password-help">
+            <summary>忘记密码？</summary>
+            <p>演示页面暂未接入密码找回服务。</p>
+          </details>
+        </div>
+
+        <button type="submit">登录</button>
+        <p class="demo-note">作业演示页面，暂未接入登录服务。</p>
+      </form>
+
+      <p class="auth-switch">还没有账号？<a href="register.html">立即注册</a></p>
+    </section>
+    <footer class="page-footer">AI 助教 · 陪伴每一次思考</footer>
+  </main>
+</body>
+</html>
